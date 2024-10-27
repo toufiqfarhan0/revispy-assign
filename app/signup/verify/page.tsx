@@ -31,10 +31,9 @@ export default function VerifyEmail() {
       // For this example, we'll just check if all digits are filled
       if (verificationCode.length === 6) {
         // Set the isLoggedIn cookie
-        Cookies.set('isLoggedIn', 'true', { expires: 7 }) // expires in 7 days
+        Cookies.set('isLoggedIn', 'true', { expires: 7 })// expires in 7 days
         toast.success("Email verified successfully!")
         router.push("/home")
-        window.location.reload(); 
       } else {
         throw new Error("Invalid verification code")
       }

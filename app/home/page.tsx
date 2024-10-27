@@ -36,6 +36,7 @@ export default function Home() {
     return generateCategories(ITEMS_PER_PAGE, startIndex)
   }, [])
 
+
   useEffect(() => {
     // Generate all categories
     const categories = generateCategories(TOTAL_ITEMS)
