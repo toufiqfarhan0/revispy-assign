@@ -10,6 +10,7 @@ export function LogoutButton() {
   const handleLogout = () => {
     Cookies.remove('isLoggedIn')
     router.push('/login')
+    window.location.reload(); 
   }
 
   return (
