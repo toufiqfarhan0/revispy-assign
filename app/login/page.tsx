@@ -25,6 +25,7 @@ export default function Login() {
         Cookies.set('isLoggedIn', 'true', { expires: 7 }) // expires in 7 days
         toast.success("Login successful!")
         router.push("/home")
+        window.location.reload(); 
       } else {
         throw new Error("Invalid credentials")
       }
